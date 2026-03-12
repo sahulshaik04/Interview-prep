@@ -1,0 +1,13 @@
+string='abcacaavcacsd'
+def count_palindrome(string):
+    n=len(string)
+    count=0
+    left=0
+    right=left+2
+    while(right<n):
+        if string[left]==string[right]:
+            count+=1
+        left+=1
+        right+=1
+    return count
+print(count_palindrome(string))
